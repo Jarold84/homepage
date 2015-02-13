@@ -1,27 +1,156 @@
+
 body {
-	font-family: 'Lato', sans-serif;
-	color: #747704;
-	font-weight: 300;
+	/*font-family: 'Josefin sans', sans-serif;*/
+	/*font-family: 'Lato', sans-serif;*/
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 700;
 }
 
+
+.header-link {
+	font-size: 15pt;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: 'Josefin sans', sans-serif;
+	color: #fff;
+}
+
+/* Override bootsrap's issues dropping things to the next line */
+.header-container {
+	width: 100%;
+	margin-left: 10px;
+
+}
+
+a:active {
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+	color: white;
+} 
+
+/* Navbar manual overrides */
+.navbar {
+	min-height: 50px;
+}
+
+.navbar-right {
+	margin-top: 7px;
+}
+
+.navbar-inverse {
+	background-image: linear-gradient(to bottom,#000,#222 100%);
+}
+
+.subj-title {
+	font-weight: 800;
+	font-size: 40pt;
+
+}
+
+.subj-subtitle {
+	font-weight: 400;
+	font-size: 20pt;
+	color: #aaa;
+
+}
+
+.title-super {
+	font-size: 30pt;
+	color: white;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-family: 'Josefin sans', sans-serif;
+}
+
+.title-logo {
+	margin-right: 20px;
+	margin-top: 4px;
+	vertical-align: top;
+	text-decoration: none;
+}
+
+
+.text-muted{
+	color: #BCBBBB;
+}
+
+/* Media Queries to adjust header text size */
+
+@media (max-width: 320px) {
+	.title-super {
+		font-size: 24pt;
+		vertical-align: bottom;
+	}
+
+	.title-logo {
+		margin-top: 1px;
+		vertical-align: top;
+	}
+}
+/*
+@media (min-width: 321px ) and (max-width: 355px) {
+	.title-super {
+		font-size: 20pt;
+		vertical-align: bottom;
+	}
+
+	.title-logo {
+		margin-top: 1px;
+		vertical-align: top;
+	}
+}
+
+
+@media (min-width: 356px ) and (max-width: 405px) {
+	.title-super {
+		font-size: 25pt;
+		vertical-align: bottom;
+	}
+
+	.title-logo {
+		margin-top: 1px;
+		vertical-align: top;
+	}
+}
+
+@media (min-width: 801px) and (max-width: 995px) {
+	.header-link {
+		font-size: 12pt;
+	}
+
+
+}*/
+@media (min-width: 768px) and (max-width: 800px) {
+	.header-link {
+		font-size: 12pt;
+	}
+
+
+}
+
+/*
 hr {
 	height: 5px;
 	background-color: #eeeeee;
 	border:5;
 }
 
-.text-muted{
-	color: #BCBBBB;
-}
+
 
 .text-thin {
 	font-weight: 100;
 }
-
-.title-super {
-	font-size: 60pt;
-}
-
-.title-logo {
-	margin-top: 20px;
-}
+*/

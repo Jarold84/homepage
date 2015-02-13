@@ -5,47 +5,63 @@
   	<meta charset="utf-8">
   	<meta http-equiv="X-UA-Compatible" content="IE-edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<title>Title</title>
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+  	<meta name="description" content="Homepage of Jason Arold Matte Painting Compositing Environment Artist Web Developer Front End Developer">
+  	<title>Jason Arold</title>
+	<!--
   	<link rel="stylesheet" href="css/bootstrap.css">
   	<link rel="stylesheet" href="css/style.css">
   	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+
+  	<!-- Font Loading -->
+  	<!--<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'> -->
+  	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+  	<!-- Bootstrap Stylesheets -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Website CSS Styles -->
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
-  <body>
-  	<div class="container" style="box-shadow: 0px 2px 2px #dddddd">
-	    <div class="row">
-	      <div class="col-md-4"><img class="title-logo" src="http://placehold.it/100x100" alt="logo" ></div>
-	      <div class="col-md-8 text-right text-uppercase">
-	        <h1 class="title-super text-thin">Jason Arold</h1>
-	        <h3>Developer and more</h3>
-	      </div>
-	    </div>
-	    <div class="row">
-	    	<div class="col-md-12">
-	    		<hr>
-	    	</div>
-	    </div>
-	    <div class="row text-center">
-	      <div class="col-md-4">
-	        <img class="img-responsive" src="http://placehold.it/555x100">
-	        <p><a href="http://github.com">About</a></p>
-	      </div>
-	      <div class="col-md-4">
-	        <img class="img-responsive" src="http://placehold.it/555x100">
-	        <p><a href="http://github.com">Resume</a></p>
-	      </div>
-  	      <div class="col-md-4">
-	        <img class="img-responsive" src="http://placehold.it/555x100">
-	        <p><a href="http://github.com">Contact</a></p>
-	      </div>
-	    </div>
-	    <div class="row">
-	    	<div class="col-md-12">
-	      		<img class="img-responsive" src="http://www.placehold.it/1140x350" alt="Main Image">
-	      	</div>
-	    </div>
-	</div>
-  </body>
+<body ng-app="myApp">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Website Content  -->
+
+<!-- Header -->
+<div ng-include='"templates/header.html"'></div>
+
+<!-- Main View -->
+<div ng-view></div>
+
+<!-- Footer -->
+<div ng-include='"templates/footer.html"'></div>
+
+<!-- jquery and bootstrap.min -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+
+<!-- Angular includes -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+
+<!-- Our Website Javascripts -->
+<script src="js/app.js"></script>
+
+<!-- Controllers -->
+<script src="js/controllers/MainController.js"></script>
+
+<!-- Services -->
+
+<!-- Directives -->
+
+
+</body>
 </html>
