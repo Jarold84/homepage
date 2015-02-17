@@ -2,15 +2,17 @@
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container header-container">
+
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        	<img class="title-logo" src="images/logo.png" height="60px">
+            <button type="button" id="myNavButton" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-            <a class="title-super" href="#/"><img class="title-logo" src="images/logo.png" height="50px">Jason Arold</a>
+            <a class="title-super" href="#/">Jason Arold</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -25,8 +27,17 @@
                 <li><a href="#/contact" class="header-link">Connect</a>
                 </li>
             </ul>
-        </div>
+        </div> 
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
+    <script>
+    $(".header-link").on("click", function(){
+        // See if the nav button is visible (mobile mode)
+        // If it is- collapse it when clicked
+        if ( $("#myNavButton").is(":visible")) {
+            $(".collapse").collapse('toggle');
+            }
+        });
+    </script>
 </nav>

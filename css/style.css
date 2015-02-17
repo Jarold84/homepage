@@ -3,7 +3,7 @@ body {
 	/*font-family: 'Josefin sans', sans-serif;*/
 	/*font-family: 'Lato', sans-serif;*/
 	font-family: 'Droid Sans', sans-serif;
-	font-weight: 700;
+	font-weight: 200;
 }
 
 
@@ -41,10 +41,25 @@ a:hover {
 	color: white;
 } 
 
+.footer-hr-obj {
+	margin: 5px;
+	color: green;
+}
+
+.header-container{
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
 /* Navbar manual overrides */
 .navbar {
 	min-height: 50px;
 }
+
+.navbar-fixed-top {
+	border: 0px;
+}
+
 
 .navbar-right {
 	margin-top: 7px;
@@ -55,13 +70,15 @@ a:hover {
 }
 
 .subj-title {
-	font-weight: 800;
-	font-size: 40pt;
+	font-family: 'Josefin sans', sans-serif;
+	font-weight: 100;
+	font-size: 60pt;
+	text-transform: lowercase;
 
 }
 
 .subj-subtitle {
-	font-weight: 400;
+	font-weight: 100;
 	font-size: 20pt;
 	color: #aaa;
 
@@ -77,7 +94,7 @@ a:hover {
 
 .title-logo {
 	margin-right: 20px;
-	margin-top: 4px;
+	margin-top: 0px;
 	vertical-align: top;
 	text-decoration: none;
 }
@@ -96,8 +113,13 @@ a:hover {
 	}
 
 	.title-logo {
-		margin-top: 1px;
 		vertical-align: top;
+	}
+}
+
+@media (max-width: 768px) {
+	.header-container {
+		margin-left: 15px;
 	}
 }
 /*
