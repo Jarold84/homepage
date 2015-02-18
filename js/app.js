@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute']).
+var app = angular.module('myApp', ['ngRoute', 'ngAnimate']).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.
 	when("/", {templateUrl: "views/main.html", controller: "MainController"}).

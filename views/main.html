@@ -7,7 +7,7 @@
 <!-- Main content here -->
 
 <!-- Temporary text -->
-<div class="sectionr">
+<div class="section">
 
     <div class="container">
 
@@ -21,6 +21,7 @@
         <div class="row">
             <div class="col-lg-12 text-right">
                 <h3 class="subj-title">About Me</h3>
+                <h3 class="subj-subtitle">Who am I?</h3>
                 <p>I’ve spent the past 8 years working in the animation industry where I learned a surprising breadth of skills.  I began as a Technical Director, leveraging my strong background in computer science to maintain a diverse set of departmental tools.  I worked closely with artists to create custom interfaces and scripts in a variety of software packages...  <a href="/#about" class="page-link" style="color: #addff5">Learn More</a></p>
             </div>
         </div>
@@ -54,4 +55,14 @@
     <!-- /.container -->
 
 </div>
+
+<!-- Footer included on each page to resolve jumpiness with animated transitions-->
+<div ng-include='"templates/footer.html"'></div>
+
 <!-- /.section-colored -->
+
+<!-- Loading animation fade in
+  <script> $(document).ready(function (){
+    $('.section').css('opacity', '0').fadeTo(500, 1,'swing'); 
+    });
+  </script> -->

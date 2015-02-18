@@ -14,13 +14,45 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="subj-title">Portfolio</h2>
-                <h3 class="subj-subtitle">I'm still putting my portfolio together.  Please check back soon!</h3>
+                <h3 class="subj-subtitle">I'm still putting my portfolio together.  Please check back soon for more content!</h3>
             </div>
         </div>
         <!-- /.row -->
 
     </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Projects</h2>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel-body" id="jasonaroldPanel">
+                    <div class="col-md-4 text-center" height="400px">
+                            <img src="images/logo.png" height="200px" alt="jasonarold Logo">
+                    </div>
+                    <div class="col-md-8">
+                            <h3>jasonarold.com Homepage</h3>
+                            <p>A simple site I made to show off some basic AngularJS. <br>
+                            AngularJS offers great performance and cuts down on whole-page reloads significantly.  Most of the styling on the site is done with a simple bootstrap library. I customized several of the page styles and added a few animations/links with Javascript and jQuery.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
     <!-- /.container -->
 
 </div>
-<!-- /.section-colored -->
+
+<!-- Footer included on each page to resolve jumpiness with animated transitions-->
+<div ng-include='"templates/footer.html"'></div>
+
+
+<!-- Scripts for this page only -->
+<script src="js/portfolio.js"></script>

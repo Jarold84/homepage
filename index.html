@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- Angular includes -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+
     <!-- Website CSS Styles -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -40,19 +45,18 @@
 <div ng-include='"templates/header.html"'></div>
 
 <!-- Main View -->
-<div ng-view></div>
+<div ng-view class="slide-animation"></div>
+<!-- Footer 
+<div ng-include='"templates/footer.html"'></div> -->
 
-<!-- Footer -->
-<div ng-include='"templates/footer.html"'></div>
+
 
 <!-- jquery and bootstrap.min -->
 <!--
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
 
-<!-- Angular includes -->
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+
 
 <!-- Main Website Javascripts -->
 <script src="js/app.js"></script>
@@ -64,6 +68,11 @@
 <!-- Services -->
 
 <!-- Directives -->
+
+  <script> $(document).ready(function (){
+    $('body').css('opacity', '0').fadeTo(1500, 1,'swing'); 
+    });
+  </script>
 
 
 </body>
